@@ -4,7 +4,7 @@ shop.forEach((s) => {
         let card = document.querySelectorAll(".card");
         card.forEach((c) => {
             let img = c.querySelector("img");
-            window.location.href =`https://wa.me/+201010252321/?text=${img.getAttribute("date-name")}`;
+            window.location.href = `https://wa.me/+201010252321/?text=${img.getAttribute("data-name")}`;
         });
     };
 });
