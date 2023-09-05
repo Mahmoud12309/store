@@ -131,11 +131,16 @@ img{
 }
 .Product .container {
     padding: 53px 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
 }
 .Product .container .content {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+    align-items: center;
 }
 .Product .container .card {
     position: relative;
@@ -183,4 +188,113 @@ img{
     box-shadow: 0 0 0;
     border-radius: 0;
 }
+.Product .container .btn{
+    margin-top: 15px;
+}
+.Product .container .btn a{
+    background: #09b9e8;
+    color: white;
+    padding: 3px 5px;
+}
 /* end products */
+/* start banner */
+.banner {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    background-image: url(../img/b.jpg);
+    background-size: cover;
+    background-position: top;
+    overflow: hidden;
+}
+.banner .container {
+    width: 100%;
+    height: 100%;
+    align-items: center;
+    display: flex;
+}
+.banner .container .head{
+color: #fff;
+font-size: 35px;
+}
+.banner .container form {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: white;
+}
+.banner .container form input {
+    padding: 5px;
+    width: 300px;
+    outline: none;
+    border: 0;
+    color: #09b9e8;
+}
+.banner .container form a {
+    outline: none;
+    border: 0;
+    padding: 7px 22px;
+    cursor: pointer;
+    background: #4ab9d7;
+    color: white;
+    font-size: 17px;
+    font-weight: 600;
+}
+.contant {
+    position: absolute;
+    right: -500px;
+    top: 30px;
+    background: #09b9e8;
+    width: 295px;
+    height: 50px;
+    font-family: sans-serif;
+    letter-spacing: 1px;
+    color: white;
+    transition: 0.5s;
+    opacity: 0;
+    border-top-right-radius: 20px;
+}
+
+.contant.active {
+    opacity: 1;
+    right: 0;
+}
+
+.contant p {
+    margin: 6px 0 0 16px;
+    font-size: 17px;
+}
+
+.contant .sh {
+    height: 7px;
+    width: 100%;
+    background: #7777774d;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
+
+.contant .sh span {
+    position: absolute;
+    width: 47%;
+    height: 100%;
+    top: 0;
+    right: 0;
+    background: #cacacad4;
+    display: block;
+}
+
+.contant .X {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 35px;
+    height: 35px;
+    line-height: 32px;
+    text-align: center;
+    background: red;
+    border: 3.5px solid #fff;
+    border-radius: 50%;
+    cursor: pointer;
+}
+/* end banner */
