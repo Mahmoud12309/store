@@ -132,13 +132,14 @@ img{
 .Product .container {
     padding: 53px 50px;
 }
-.Product .container .content{
+.Product .container .content {
     display: flex;
     flex-wrap: wrap;
+    justify-content: center;
 }
 .Product .container .card {
     position: relative;
-    width: 300px;
+    width: 372px;
     background: #fff;
     overflow: hidden;
     margin: 10px 6px;
